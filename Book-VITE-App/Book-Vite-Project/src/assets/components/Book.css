@@ -1,0 +1,36 @@
+/* .card{
+    width:400px;
+    height:400px;
+    background-color:aqua;
+    border:5px solid blue ;
+    padding:20px;
+    border-radius:10px;
+
+} */
+ /* Container for all book cards */
+.card-container {
+  display: flex;              /* places boxes side-by-side */
+  justify-content: center;    /* center them horizontally */
+  align-items: center;        /* align them vertically */
+  gap: 30px;                  /* space between each card */
+  flex-wrap: wrap;            /* allows wrapping on smaller screens */
+  padding: 40px;
+  background-color: #f4f4f9;  /* light background for contrast */
+}
+
+/* Individual book card */
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: aqua;
+  border: 5px solid blue;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);
+}
